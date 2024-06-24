@@ -1,0 +1,39 @@
+MNIST (Image Classification)
+
+Assignment: Create a Jupyter notebook with a program to recognize handwritten digits. Train the model with the MNIST dataset.
+
+https://github.com/MeAl-s/Yong-MFEC-Intern/
+
+Background Information
+Mnist is 28*28 pixels, colour value is between (0-255) white to black scale = gray scale, the data set is divided into two parts: 60000 training images and 10000 test images. Training images are used to train the model to train the machine learning model, while test images are used to evaluate the accuracy of the model. 
+
+Explain the architecture of the model used for digit recognition.
+
+
+Model Architecture (โครงสร้างของโมเดล)
+model = tf.keras.models.Sequential() 
+model.add(tf.keras.layers.Flatten(input_shape=(28, 28)))
+model.add(tf.keras.layers.Dense(128, activation='relu'))
+model.add(tf.keras.layers.Dense(128, activation='relu')) 
+model.add(tf.keras.layers.Dense(128, activation='softmax')) 
+
+This model is a simple model designed for fast network creation. Firstly through the sequential model, it’s the starting point of the architecture model recognition. Whenever you are building an architecture you have to start with the sequential model as it’s the beginning point of an empty model, then step by step you can add more layers to it. Secondly, the next action to take is to start building the model using (Dense, Flatten, etc) to construct the neural network, by adding items into it over the sequential model. The Flatten model in the second line converts the neural network from a multi dimensional to a one dimensional. This line of code tells the model to take each 28x28 image and lay out all its pixel values in a single line (1D vector of 784 values) before passing it to the dense layers. As a result when drawn in paint there’s a total of 784 values matching with the paint programme 28*28 pixels. The fourthline is the dense model is a fully connected layer with Relu activation, and the last line is with softmax activation(non-linear to increase accuracy of the model). 
+
+MultiDimensional: 28x28 Grid
+[[1, 2, 3, ..., 28],
+ [29, 30, 31, ..., 56],
+  [757, 758, 759, ..., 784]]
+
+				One Dimension:1x784 Vector
+
+[1, 2, 3, ..., 784]
+
+
+
+
+Experiment with the model with a custom picture.
+
+-Specific Problem - 
+Notes: Clients demand large language models e.g hospitals using ai to summarize patient overall conditions, past history, etc. However they can’t connect to wifi due to having two monitors, to avoid getting hacked. Thus, they need a ai that doesn’t need to connect to the internet and summarize the patient condition without needing to connect to the internet. 
+
+
