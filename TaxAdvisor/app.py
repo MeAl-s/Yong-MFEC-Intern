@@ -20,7 +20,7 @@ os.environ["OPENAI_EMBEDDINGS_DEPLOYMENT"] = "text-embedding-3-small"
 # Initialize the AzureOpenAIEmbeddings class
 embeddings = AzureOpenAIEmbeddings(deployment=os.environ["OPENAI_EMBEDDINGS_DEPLOYMENT"])
 
-# Load the CSV file
+# Load the CSV filed
 df = pd.read_csv('/home/lord/MFEC/Yong-MFEC-Intern/TaxAdvisor/finally1.csv')
 
 # Extract the inquiries and conclusions
