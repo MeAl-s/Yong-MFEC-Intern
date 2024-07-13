@@ -81,7 +81,7 @@ if st.button("Setup Milvus Collection"):
     mil.insert(collectionName, milDict)
     st.success("Milvus collection setup completed")
 
-# Query section
+# Query sectiond
 
         
 st.header("Query Milvus")
