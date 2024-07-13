@@ -14,7 +14,7 @@ from pymilvus import MilvusClient, MilvusException
 os.environ["OPENAI_API_TYPE"] = "azure"
 os.environ["OPENAI_API_VERSION"] = "2023-05-15"
 os.environ["AZURE_OPENAI_ENDPOINT"] = "https://insideout.openai.azure.com/"
-os.environ["OPENAI_API_KEY"] = "b6c0397877a9420aa7b3c2bad2e622f7"
+os.environ["OPENAI_API_KEY"] = "1"
 os.environ["OPENAI_EMBEDDINGS_DEPLOYMENT"] = "text-embedding-3-small"
 
 # Initialize the AzureOpenAIEmbeddings class
@@ -103,7 +103,7 @@ if query and st.button("Search"):
     client = AzureOpenAI(
             api_version="2024-02-01",
             azure_endpoint="https://insideout.openai.azure.com/",
-            api_key="b6c0397877a9420aa7b3c2bad2e622f7"
+            api_key="1"
         )
 
     response = client.chat.completions.create(
