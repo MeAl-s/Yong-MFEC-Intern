@@ -23,6 +23,7 @@ string_to_count = input("Enter the string: ")
 char_to_count = input("Enter the character to count: ")
 
 # Count occurrences using the char_count function
+
 count_result = char_count(string_to_count, char_to_count)
 
 # Prepare the user message
